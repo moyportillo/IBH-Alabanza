@@ -15,6 +15,8 @@ Esto ayudara a obtener la información más rápida y efectiva, y poder cubrir e
 que en la actualidad ejercen dentro de la iglesia.
 Entonces nos basaremos en la recolección y funcionamiento de información dentro de una iglesia.
 
+# Innovacion
+- Poder hacer un sistema que mande el calendario por medio de correo.
 
 # Tipo de Base de Datos
 - SQL Server

@@ -1,0 +1,178 @@
+USE IBH_Alabanza
+GO
+
+CREATE TABLE dbo.Miembro
+(id_miembro int PRIMARY KEY NOT NULL,
+nombre_miembro varchar NOT NULL,
+apellido_miembro varchar NOT NULL,
+fecha nvarchar NOT NULL,
+correo nvarchar,
+direccion_miembro nvarchar,
+genero int NOT NULL,
+bautizo int NOT NULL,
+estado int NOT NULL,
+observacion nvarchar
+)
+
+
+CREATE TABLE dbo.Inventario
+(id_inventario int PRIMARY KEY NOT NULL,
+nombre_aparato nvarchar NOT NULL,
+tipo_aparato int NOT NULL,
+marca nvarchar NOT NULL,
+modelo nvarchar,
+serie nvarchar,
+color nvarchar,
+estado int NOT NULL,
+observacion nvarchar
+)
+
+CREATE TABLE dbo.canciones
+(id_canciones int PRIMARY KEY NOT NULL,
+nombre_canciones nvarchar NOT NULL,
+autor varchar NOT NULL,
+album nvarchar,
+anio nvarchar,
+tipo_cancion int NOT NULL
+)
+CREATE TABLE dbo.Genero
+(id_genero int PRIMARY KEY NOT NULL,
+descripcion_genero nvarchar NOT NULL
+)
+----------------------
+CREATE TABLE dbo.Tipo_Talento
+(id_talento int PRIMARY KEY NOT NULL,
+descripcion_talento nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.talento_tipo
+(id_talento int NOT NULL,
+id_miembro int NOT NULL,
+
+CONSTRAINT FK_talento_tipo
+FOREIGN KEY (id_talento) REFERENCES Tipo_talento(id_talento)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+
+CONSTRAINT FK_miembro
+FOREIGN KEY (id_miembro) REFERENCES Miembro(id_miembro)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+)
+--//////////////////////
+CREATE TABLE dbo.dias_servicio
+(id_servicio int PRIMARY KEY NOT NULL,
+descripcion_servicio nvarchar NOT NULL
+)
+
+create table dbo.Dias_Semana
+(id_servicio int NOT NULL,
+id_miembro int NOT NULL,
+
+CONSTRAINT FK_Dias_Semana_2
+FOREIGN KEY (id_servicio) REFERENCES dias_servicio(id_servicio)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+
+CONSTRAINT FK_miembro_2
+FOREIGN KEY (id_miembro) REFERENCES Miembro(id_miembro)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+)
+--////////////////////////
+CREATE TABLE dbo.Tipo_Discipulado
+(id_discipulado int PRIMARY KEY NOT NULL,
+descripcion_discipulado nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.discipulado_tipo
+(id_discipulado int NOT NULL,
+id_miembro int NOT NULL,
+
+CONSTRAINT FK_discipulado_tipo
+FOREIGN KEY (id_discipulado) REFERENCES Tipo_Discipulado(id_discipulado)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+
+CONSTRAINT FK_miembro_3
+FOREIGN KEY (id_miembro) REFERENCES Miembro(id_miembro)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+)
+--/////////////////////////
+
+CREATE TABLE dbo.Bautizo
+(id_bautizo int PRIMARY KEY NOT NULL,
+descripcion nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.Tipo_Estado
+(id_estado int PRIMARY KEY NOT NULL,
+descripcion_estado nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.Tipo_Cancion
+(id_tipo_cancion int PRIMARY KEY NOT NULL,
+descripcion_tipo_cancion nvarchar NOT NULL
+)
+--/////////////////////////
+CREATE TABLE dbo.Tipo_mes_toco
+(id_tipo_mes int PRIMARY KEY NOT NULL,
+descripcion_tipo_mes nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.Registro
+(id_registro int NOT NULL,
+id_canciones INT NOT NULL,
+
+CONSTRAINT FK_registro
+FOREIGN KEY (id_registro) REFERENCES Tipo_mes_toco(id_tipo_mes)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+
+CONSTRAINT FK_cancion
+FOREIGN KEY (id_canciones) REFERENCES canciones(id_canciones)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+)
+--////////////////////////
+CREATE TABLE dbo.Tipo_Aparato
+(id_tipo_aparato int PRIMARY KEY NOT NULL,
+descripcion_tipo_aparato nvarchar NOT NULL
+)
+
+CREATE TABLE dbo.Estado_Inventario
+(id_estado_inventario int PRIMARY KEY NOT NULL,
+descripcion_estado nvarchar NOT NULL
+)
+
+ALTER TABLE Miembro
+ADD CONSTRAINT FK_genero_2
+FOREIGN KEY (genero) REFERENCES Genero(id_genero),
+
+
+CONSTRAINT FK_bautizo_3
+FOREIGN KEY (bautizo) REFERENCES Bautizo(id_bautizo),
+
+
+CONSTRAINT FK_estado_2
+FOREIGN KEY (estado) REFERENCES Tipo_Estado(id_estado)
+
+
+ALTER TABLE Inventario
+ADD CONSTRAINT FK_Tipo_Aparato
+FOREIGN KEY (tipo_aparato) REFERENCES Tipo_Aparato(id_tipo_aparato)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+
+CONSTRAINT FK_estado_inventario
+FOREIGN KEY (estado) REFERENCES Estado_Inventario(id_estado_inventario)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+
+ALTER TABLE canciones
+ADD CONSTRAINT FK_tipo_Cancion
+FOREIGN KEY (tipo_cancion) REFERENCES Tipo_Cancion(id_tipo_cancion)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+GO

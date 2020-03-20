@@ -1,0 +1,9 @@
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\bin\Debug\Proyecto_IBH_Alabanza.exe.config
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\bin\Debug\Proyecto_IBH_Alabanza.exe
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\bin\Debug\Proyecto_IBH_Alabanza.pdb
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.csprojAssemblyReference.cache
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Menu_Principal.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Properties.Resources.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.csproj.GenerateResource.cache
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.exe
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.pdb

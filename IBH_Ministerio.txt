@@ -80,8 +80,8 @@ ON DELETE CASCADE
 )
 --////////////////////////
 CREATE TABLE dbo.Tipo_Discipulado
-(id_discipulado int IDENTITY(1,1) PRIMARY KEY NOT NULL,
-descripcion_discipulado nvarchar(15) NOT NULL
+(id_discipulado int PRIMARY KEY NOT NULL,
+descripcion_discipulado nvarchar(30) NOT NULL
 )
 
 CREATE TABLE dbo.discipulado_tipo

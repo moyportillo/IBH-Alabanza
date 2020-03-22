@@ -31,5 +31,26 @@ namespace Proyecto_IBH_Alabanza
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Nuevo_Usuario pantalla_Nuevousuario = new Nuevo_Usuario();
+            pantalla_Nuevousuario.Show();
+            this.Visible = false;
+        }
+
+        private void bntNuevacancion_Click(object sender, EventArgs e)
+        {
+            Form_canciones pantalla_canciones = new Form_canciones();
+            pantalla_canciones.Show();
+            this.Visible = false;
+        }
+
+        private void btnNuevoInventario_Click(object sender, EventArgs e)
+        {
+            Inventario pantalla_Inventario = new Inventario();
+            pantalla_Inventario.Show();
+            this.Visible = false;
+        }
     }
 }

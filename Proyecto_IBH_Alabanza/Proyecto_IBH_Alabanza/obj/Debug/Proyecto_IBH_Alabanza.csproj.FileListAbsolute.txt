@@ -7,3 +7,9 @@ D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_I
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.csproj.GenerateResource.cache
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.exe
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.pdb
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Nuevo_Usuario.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Nuevo_Usuario_Datos.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Nuevo_Candidato.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Form_canciones.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Inventario.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Mantenimiento_Usuario.resources

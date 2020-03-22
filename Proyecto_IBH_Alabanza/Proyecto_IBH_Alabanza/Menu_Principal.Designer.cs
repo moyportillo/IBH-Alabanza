@@ -29,28 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Principal));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.archivosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.tablasDeResultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bntNuevacancion = new System.Windows.Forms.Button();
+            this.btnNuevoInventario = new System.Windows.Forms.Button();
+            this.btnResultados = new System.Windows.Forms.Button();
+            this.bntCalendario = new System.Windows.Forms.Button();
+            this.btnSalida = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnNuevo
             // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(225, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 170);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(225, 90);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(168, 170);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip2
             // 
@@ -73,58 +74,6 @@
             this.archivosToolStripMenuItem1.Size = new System.Drawing.Size(77, 24);
             this.archivosToolStripMenuItem1.Text = "Archivos";
             // 
-            // mantenimientoToolStripMenuItem
-            // 
-            this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(441, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 170);
-            this.button2.TabIndex = 3;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(225, 294);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 170);
-            this.button3.TabIndex = 4;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(441, 294);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 170);
-            this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(225, 493);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(168, 170);
-            this.button5.TabIndex = 6;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(441, 493);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 170);
-            this.button6.TabIndex = 7;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // tablasDeResultadosToolStripMenuItem
             // 
             this.tablasDeResultadosToolStripMenuItem.Name = "tablasDeResultadosToolStripMenuItem";
@@ -138,6 +87,60 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // mantenimientoToolStripMenuItem
+            // 
+            this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            // 
+            // bntNuevacancion
+            // 
+            this.bntNuevacancion.Image = ((System.Drawing.Image)(resources.GetObject("bntNuevacancion.Image")));
+            this.bntNuevacancion.Location = new System.Drawing.Point(441, 90);
+            this.bntNuevacancion.Name = "bntNuevacancion";
+            this.bntNuevacancion.Size = new System.Drawing.Size(168, 170);
+            this.bntNuevacancion.TabIndex = 3;
+            this.bntNuevacancion.UseVisualStyleBackColor = true;
+            this.bntNuevacancion.Click += new System.EventHandler(this.bntNuevacancion_Click);
+            // 
+            // btnNuevoInventario
+            // 
+            this.btnNuevoInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoInventario.Image")));
+            this.btnNuevoInventario.Location = new System.Drawing.Point(225, 294);
+            this.btnNuevoInventario.Name = "btnNuevoInventario";
+            this.btnNuevoInventario.Size = new System.Drawing.Size(168, 170);
+            this.btnNuevoInventario.TabIndex = 4;
+            this.btnNuevoInventario.UseVisualStyleBackColor = true;
+            this.btnNuevoInventario.Click += new System.EventHandler(this.btnNuevoInventario_Click);
+            // 
+            // btnResultados
+            // 
+            this.btnResultados.Image = ((System.Drawing.Image)(resources.GetObject("btnResultados.Image")));
+            this.btnResultados.Location = new System.Drawing.Point(441, 294);
+            this.btnResultados.Name = "btnResultados";
+            this.btnResultados.Size = new System.Drawing.Size(168, 170);
+            this.btnResultados.TabIndex = 5;
+            this.btnResultados.UseVisualStyleBackColor = true;
+            // 
+            // bntCalendario
+            // 
+            this.bntCalendario.Image = ((System.Drawing.Image)(resources.GetObject("bntCalendario.Image")));
+            this.bntCalendario.Location = new System.Drawing.Point(225, 493);
+            this.bntCalendario.Name = "bntCalendario";
+            this.bntCalendario.Size = new System.Drawing.Size(168, 170);
+            this.bntCalendario.TabIndex = 6;
+            this.bntCalendario.UseVisualStyleBackColor = true;
+            // 
+            // btnSalida
+            // 
+            this.btnSalida.Image = ((System.Drawing.Image)(resources.GetObject("btnSalida.Image")));
+            this.btnSalida.Location = new System.Drawing.Point(441, 493);
+            this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Size = new System.Drawing.Size(168, 170);
+            this.btnSalida.TabIndex = 7;
+            this.btnSalida.UseVisualStyleBackColor = true;
+            this.btnSalida.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,12 +148,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(826, 747);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalida);
+            this.Controls.Add(this.bntCalendario);
+            this.Controls.Add(this.btnResultados);
+            this.Controls.Add(this.btnNuevoInventario);
+            this.Controls.Add(this.bntNuevacancion);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.menuStrip2);
             this.DoubleBuffered = true;
             this.Name = "Menu_Principal";
@@ -166,15 +169,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem archivosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button bntNuevacancion;
+        private System.Windows.Forms.Button btnNuevoInventario;
+        private System.Windows.Forms.Button btnResultados;
+        private System.Windows.Forms.Button bntCalendario;
+        private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.ToolStripMenuItem tablasDeResultadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }

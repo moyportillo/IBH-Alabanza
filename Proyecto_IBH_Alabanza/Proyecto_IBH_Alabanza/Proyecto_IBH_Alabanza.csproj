@@ -46,17 +46,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Canciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Canciones.designer.cs">
+      <DependentUpon>Canciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compartir_Datos.cs" />
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Usuario.Designer.cs">
+      <DependentUpon>Mantenimiento_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu_Principal.Designer.cs">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Miembro.cs" />
+    <Compile Include="Nuevo_Candidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuevo_Candidato.Designer.cs">
+      <DependentUpon>Nuevo_Candidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuevo_Usuario.Designer.cs">
+      <DependentUpon>Nuevo_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo_Usuario_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuevo_Usuario_Datos.Designer.cs">
+      <DependentUpon>Nuevo_Usuario_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Canciones.resx">
+      <DependentUpon>Canciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Usuario.resx">
+      <DependentUpon>Mantenimiento_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo_Candidato.resx">
+      <DependentUpon>Nuevo_Candidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo_Usuario.resx">
+      <DependentUpon>Nuevo_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo_Usuario_Datos.resx">
+      <DependentUpon>Nuevo_Usuario_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

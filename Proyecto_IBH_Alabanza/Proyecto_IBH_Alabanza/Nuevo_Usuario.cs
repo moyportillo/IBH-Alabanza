@@ -32,8 +32,20 @@ namespace Proyecto_IBH_Alabanza
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            Miembro datos_Miembro = new Miembro(txtId.Text, txtNombre.Text, txtApellido.Text, datetime_Fecha.Text, cmbGenero.Text, txtdireccion.Text, txtCorreo.Text, txtTelefono.Text, Compartir_Datos.estado, Compartir_Datos.bautizo, Compartir_Datos.disponibilidad, Compartir_Datos.observacion);
-            MessageBox.Show("¡AGREGADO NUEVO USUARIO!\n"+datos_Miembro.Confirmacion_Usuario(), "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Miembro datos_Miembro = new Miembro(txtId.Text, txtNombre.Text, txtApellido.Text, datetime_Fecha.Text, int.Parse(cmbGenero.SelectedIndex.ToString()), txtdireccion.Text, txtCorreo.Text, txtTelefono.Text, Compartir_Datos.estado, Compartir_Datos.bautizo, Compartir_Datos.disponibilidad, Compartir_Datos.observacion);
+            try
+            {
+                if (datos_Miembro.guardar_Usuario())
+                {
+                    MessageBox.Show("¡AGREGADO NUEVO USUARIO!\n" + datos_Miembro.Confirmacion_Usuario(), "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    limpiar();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ocurrio un Error en el Proceso de Datos: " + ex.ToString());
+            }
         }
 
         private void cmbGenero_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,6 +78,23 @@ namespace Proyecto_IBH_Alabanza
             {
                 new_candidato.Show();
             }
+        }
+
+        public void limpiar()
+        {
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtCorreo.Text = "";
+            txtdireccion.Text = "";
+            txtTelefono.Text = "";
+            cmbGenero.SelectedIndex = 0;
+            cmbUsuario.SelectedIndex = 0;
+        }
+
+        private void datetime_Fecha_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

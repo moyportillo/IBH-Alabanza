@@ -12,8 +12,8 @@ namespace Proyecto_IBH_Alabanza
         protected string Nombre_Persona;
         protected string Apellido_Persona;
         protected string fecha;
-        protected string genero;
-        protected string direcccion;
+        protected int genero;
+        protected string direccion;
         protected string correo;
         protected string telefono;
 
@@ -22,14 +22,14 @@ namespace Proyecto_IBH_Alabanza
 
         }
 
-        public Persona(string id, string nom, string ape,  string tiempo, string gen, string dir, string email, string tel)
+        public Persona(string id, string nom, string ape,  string tiempo, int gen, string dir, string email, string tel)
         {
             identidad = id;
             Nombre_Persona = nom;
             Apellido_Persona = ape;
             fecha = tiempo;
             genero = gen;
-            direcccion = dir;
+            direccion = dir;
             correo = email;
             telefono = tel;
         }

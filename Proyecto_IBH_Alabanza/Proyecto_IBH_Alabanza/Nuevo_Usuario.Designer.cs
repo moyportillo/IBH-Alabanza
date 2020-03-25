@@ -60,16 +60,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(193, 50);
+            this.label1.Location = new System.Drawing.Point(177, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 39);
+            this.label1.Size = new System.Drawing.Size(300, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Agregar Usuario";
+            this.label1.Text = "Agregar Miembro";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(508, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(492, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 128);
             this.pictureBox1.TabIndex = 1;
@@ -218,6 +218,7 @@
             this.datetime_Fecha.Name = "datetime_Fecha";
             this.datetime_Fecha.Size = new System.Drawing.Size(200, 26);
             this.datetime_Fecha.TabIndex = 5;
+            this.datetime_Fecha.ValueChanged += new System.EventHandler(this.datetime_Fecha_ValueChanged);
             // 
             // label4
             // 
@@ -246,6 +247,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(168, 68);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(212, 26);
@@ -263,7 +265,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(556, 538);
+            this.btnGuardar.Location = new System.Drawing.Point(464, 538);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(76, 54);
             this.btnGuardar.TabIndex = 3;
@@ -273,7 +275,7 @@
             // btnMenu
             // 
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(438, 538);
+            this.btnMenu.Location = new System.Drawing.Point(577, 538);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(76, 54);
             this.btnMenu.TabIndex = 4;
@@ -292,7 +294,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Nuevo_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo Usuario | Ministerio Alabanza ";
+            this.Text = "Nuevo Miembro | Ministerio Alabanza ";
             this.Load += new System.EventHandler(this.Nuevo_Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

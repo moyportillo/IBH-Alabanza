@@ -1,31 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace Proyecto_IBH_Alabanza
 {
     public class Miembro:Persona
     {
-        protected string estado;
+        SqlConnection conectar;
+        SqlCommand comando;
+
+        protected int estado;
         protected string bautizo;
-        protected string disponibilidad;
+        protected int disponibilidad;
         protected string observacion;
 
-        public Miembro(string id, string nom, string ape, string tiempo, string gen, string dir, string email, string tel, string state, string bau, string dias, string obs)
+        public Miembro(string id, string nom, string ape, string tiempo, int gen, string dir, string email, string tel, int state, string bau, int dias, string obs)
         {
             identidad = id;
             Nombre_Persona = nom;
             Apellido_Persona = ape;
             fecha = tiempo;
             genero = gen;
-            direcccion = dir;
+            direccion = dir;
             correo = email;
             telefono = tel;
             estado = state;
             disponibilidad = dias;
             observacion = obs;
+            bautizo = bau;
         }
 
         public override string Confirmacion_Usuario()
@@ -36,9 +42,22 @@ namespace Proyecto_IBH_Alabanza
 
         }
 
-        public void guardar_Usuario()
+        public bool guardar_Usuario()
         {
-
+            conectar = ConexionDB.enlace();
+            comando = new SqlCommand(string.Format("INSERT INTO Miembro (identidad, nombre_miembro, apellido_miembro, fecha, correo, direccion_miembro, genero, estado, observacion, telefono, bautizo, id_dias)" +
+                " values ('"+identidad+"', '"+Nombre_Persona+"', '"+Apellido_Persona+"', '"+fecha+ "', '" + correo+ "', '" +direccion + "', '" +genero+ "'," +
+                " '" + estado + "', '" + observacion+ "', '" +telefono+ "', '" + bautizo+ "', " + disponibilidad+")",identidad, Nombre_Persona, Apellido_Persona, fecha, correo, direccion, genero, estado, observacion, telefono, bautizo, disponibilidad ), conectar);
+            if(comando.ExecuteNonQuery() > 0)
+            {
+                conectar.Close();
+                return true;
+            }
+            else
+            {
+                conectar.Close();
+                return false;
+            }
         }
     }
 }

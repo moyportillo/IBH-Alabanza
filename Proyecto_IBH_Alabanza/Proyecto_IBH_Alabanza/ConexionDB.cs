@@ -71,7 +71,21 @@ namespace Proyecto_IBH_Alabanza
             return;
         }
 
-        
+        public void SeleccionTalento(ComboBox t)
+        {
+            conectar = ConexionDB.enlace();
+            comando = new SqlCommand(string.Format("SELECT descripcion_talento FROM Tipo_talento"), conectar);
+            dataleer = comando.ExecuteReader();
+
+            while (dataleer.Read())
+            {
+                t.Items.Add(dataleer[0].ToString());
+            }
+            conectar.Close();
+            t.Items.Insert(0, "Seleccione el Talento");
+            t.SelectedIndex = 0;
+            return;
+        }
 
     }
 }

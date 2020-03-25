@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 46);
+            this.label1.Location = new System.Drawing.Point(152, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(325, 39);
             this.label1.TabIndex = 0;
@@ -77,7 +77,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(496, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(504, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 128);
             this.pictureBox1.TabIndex = 2;
@@ -368,7 +368,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Nuevo_Usuario_Datos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo Usuario | IBH Alabanza";
+            this.Text = "Nuevo Miembro | Ministerio Alabanza";
             this.Load += new System.EventHandler(this.Nuevo_Usuario_Datos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);

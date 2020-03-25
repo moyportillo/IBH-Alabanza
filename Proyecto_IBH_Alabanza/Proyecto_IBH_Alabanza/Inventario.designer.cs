@@ -78,7 +78,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(167, 140);
+            this.groupBox1.Location = new System.Drawing.Point(87, 172);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(473, 329);
             this.groupBox1.TabIndex = 39;
@@ -272,7 +272,7 @@
             this.dtgmovimientos.AllowUserToAddRows = false;
             this.dtgmovimientos.AllowUserToDeleteRows = false;
             this.dtgmovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgmovimientos.Location = new System.Drawing.Point(46, 501);
+            this.dtgmovimientos.Location = new System.Drawing.Point(54, 518);
             this.dtgmovimientos.Name = "dtgmovimientos";
             this.dtgmovimientos.ReadOnly = true;
             this.dtgmovimientos.Size = new System.Drawing.Size(547, 134);
@@ -295,7 +295,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(177, 64);
+            this.label13.Location = new System.Drawing.Point(298, 63);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(301, 39);
             this.label13.TabIndex = 58;
@@ -305,7 +305,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(146, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(136, 132);
             this.pictureBox1.TabIndex = 59;

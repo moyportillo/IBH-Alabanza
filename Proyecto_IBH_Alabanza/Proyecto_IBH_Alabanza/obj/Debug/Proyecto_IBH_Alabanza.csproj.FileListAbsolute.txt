@@ -13,3 +13,4 @@ D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_I
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Form_canciones.resources
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Inventario.resources
 D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Mantenimiento_Usuario.resources
+D:\proyectos c#\Proyecto_IBH_Alabanza\Proyecto_IBH_Alabanza\obj\Debug\Proyecto_IBH_Alabanza.Tabla_Usuario.resources

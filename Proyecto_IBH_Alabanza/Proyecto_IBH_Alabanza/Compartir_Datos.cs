@@ -8,9 +8,9 @@ namespace Proyecto_IBH_Alabanza
 {
     public class Compartir_Datos
     {
-        public static string estado;
+        public static int estado;
         public static string bautizo;
-        public static string disponibilidad;
+        public static int disponibilidad;
         public static string observacion;
     }
 

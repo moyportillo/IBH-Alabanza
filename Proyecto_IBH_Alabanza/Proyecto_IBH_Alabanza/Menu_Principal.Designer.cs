@@ -29,112 +29,143 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Principal));
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.archivosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tablasDeResultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaPersonaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaCancionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoIngresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablaDeResultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.canciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bntNuevacancion = new System.Windows.Forms.Button();
-            this.btnNuevoInventario = new System.Windows.Forms.Button();
-            this.btnResultados = new System.Windows.Forms.Button();
-            this.bntCalendario = new System.Windows.Forms.Button();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalida = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(225, 90);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(168, 170);
-            this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip2
             // 
             this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem1,
+            this.nuevoToolStripMenuItem,
+            this.datosToolStripMenuItem,
+            this.herramientasToolStripMenuItem,
             this.mantenimientoToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(826, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(893, 28);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
             // archivosToolStripMenuItem1
             // 
             this.archivosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tablasDeResultadosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivosToolStripMenuItem1.Name = "archivosToolStripMenuItem1";
             this.archivosToolStripMenuItem1.Size = new System.Drawing.Size(77, 24);
             this.archivosToolStripMenuItem1.Text = "Archivos";
-            // 
-            // tablasDeResultadosToolStripMenuItem
-            // 
-            this.tablasDeResultadosToolStripMenuItem.Name = "tablasDeResultadosToolStripMenuItem";
-            this.tablasDeResultadosToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
-            this.tablasDeResultadosToolStripMenuItem.Text = "Tablas de Resultados";
+            this.archivosToolStripMenuItem1.Click += new System.EventHandler(this.archivosToolStripMenuItem1_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaPersonaToolStripMenuItem,
+            this.nuevaCancionToolStripMenuItem,
+            this.nuevoIngresoToolStripMenuItem});
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
+            // 
+            // nuevaPersonaToolStripMenuItem
+            // 
+            this.nuevaPersonaToolStripMenuItem.Name = "nuevaPersonaToolStripMenuItem";
+            this.nuevaPersonaToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.nuevaPersonaToolStripMenuItem.Text = "Nuevo Miembro";
+            this.nuevaPersonaToolStripMenuItem.Click += new System.EventHandler(this.nuevaPersonaToolStripMenuItem_Click);
+            // 
+            // nuevaCancionToolStripMenuItem
+            // 
+            this.nuevaCancionToolStripMenuItem.Name = "nuevaCancionToolStripMenuItem";
+            this.nuevaCancionToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.nuevaCancionToolStripMenuItem.Text = "Nueva Canción";
+            this.nuevaCancionToolStripMenuItem.Click += new System.EventHandler(this.nuevaCancionToolStripMenuItem_Click);
+            // 
+            // nuevoIngresoToolStripMenuItem
+            // 
+            this.nuevoIngresoToolStripMenuItem.Name = "nuevoIngresoToolStripMenuItem";
+            this.nuevoIngresoToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.nuevoIngresoToolStripMenuItem.Text = "Nuevo Ingreso";
+            this.nuevoIngresoToolStripMenuItem.Click += new System.EventHandler(this.nuevoIngresoToolStripMenuItem_Click);
+            // 
+            // datosToolStripMenuItem
+            // 
+            this.datosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tablaDeResultadosToolStripMenuItem,
+            this.canciónToolStripMenuItem,
+            this.inventarioToolStripMenuItem});
+            this.datosToolStripMenuItem.Name = "datosToolStripMenuItem";
+            this.datosToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.datosToolStripMenuItem.Text = "Buscar";
+            this.datosToolStripMenuItem.Click += new System.EventHandler(this.datosToolStripMenuItem_Click);
+            // 
+            // tablaDeResultadosToolStripMenuItem
+            // 
+            this.tablaDeResultadosToolStripMenuItem.Name = "tablaDeResultadosToolStripMenuItem";
+            this.tablaDeResultadosToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.tablaDeResultadosToolStripMenuItem.Text = "Miembro";
+            this.tablaDeResultadosToolStripMenuItem.Click += new System.EventHandler(this.tablaDeResultadosToolStripMenuItem_Click);
+            // 
+            // canciónToolStripMenuItem
+            // 
+            this.canciónToolStripMenuItem.Name = "canciónToolStripMenuItem";
+            this.canciónToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.canciónToolStripMenuItem.Text = "Canción";
+            // 
+            // inventarioToolStripMenuItem
+            // 
+            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.inventarioToolStripMenuItem.Text = "Inventario";
+            // 
+            // herramientasToolStripMenuItem
+            // 
+            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.herramientasToolStripMenuItem.Text = "Herramientas";
+            // 
             // mantenimientoToolStripMenuItem
             // 
+            this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuarioToolStripMenuItem});
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
             // 
-            // bntNuevacancion
+            // usuarioToolStripMenuItem
             // 
-            this.bntNuevacancion.Image = ((System.Drawing.Image)(resources.GetObject("bntNuevacancion.Image")));
-            this.bntNuevacancion.Location = new System.Drawing.Point(441, 90);
-            this.bntNuevacancion.Name = "bntNuevacancion";
-            this.bntNuevacancion.Size = new System.Drawing.Size(168, 170);
-            this.bntNuevacancion.TabIndex = 3;
-            this.bntNuevacancion.UseVisualStyleBackColor = true;
-            this.bntNuevacancion.Click += new System.EventHandler(this.bntNuevacancion_Click);
-            // 
-            // btnNuevoInventario
-            // 
-            this.btnNuevoInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoInventario.Image")));
-            this.btnNuevoInventario.Location = new System.Drawing.Point(225, 294);
-            this.btnNuevoInventario.Name = "btnNuevoInventario";
-            this.btnNuevoInventario.Size = new System.Drawing.Size(168, 170);
-            this.btnNuevoInventario.TabIndex = 4;
-            this.btnNuevoInventario.UseVisualStyleBackColor = true;
-            this.btnNuevoInventario.Click += new System.EventHandler(this.btnNuevoInventario_Click);
-            // 
-            // btnResultados
-            // 
-            this.btnResultados.Image = ((System.Drawing.Image)(resources.GetObject("btnResultados.Image")));
-            this.btnResultados.Location = new System.Drawing.Point(441, 294);
-            this.btnResultados.Name = "btnResultados";
-            this.btnResultados.Size = new System.Drawing.Size(168, 170);
-            this.btnResultados.TabIndex = 5;
-            this.btnResultados.UseVisualStyleBackColor = true;
-            // 
-            // bntCalendario
-            // 
-            this.bntCalendario.Image = ((System.Drawing.Image)(resources.GetObject("bntCalendario.Image")));
-            this.bntCalendario.Location = new System.Drawing.Point(225, 493);
-            this.bntCalendario.Name = "bntCalendario";
-            this.bntCalendario.Size = new System.Drawing.Size(168, 170);
-            this.bntCalendario.TabIndex = 6;
-            this.bntCalendario.UseVisualStyleBackColor = true;
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.usuarioToolStripMenuItem.Text = "Miembro";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // btnSalida
             // 
             this.btnSalida.Image = ((System.Drawing.Image)(resources.GetObject("btnSalida.Image")));
-            this.btnSalida.Location = new System.Drawing.Point(441, 493);
+            this.btnSalida.Location = new System.Drawing.Point(713, 582);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(168, 170);
             this.btnSalida.TabIndex = 7;
@@ -147,18 +178,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(826, 747);
+            this.ClientSize = new System.Drawing.Size(893, 773);
             this.Controls.Add(this.btnSalida);
-            this.Controls.Add(this.bntCalendario);
-            this.Controls.Add(this.btnResultados);
-            this.Controls.Add(this.btnNuevoInventario);
-            this.Controls.Add(this.bntNuevacancion);
-            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.menuStrip2);
             this.DoubleBuffered = true;
             this.Name = "Menu_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu | IBH Ministerio ";
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
@@ -168,18 +193,21 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem archivosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
-        private System.Windows.Forms.Button bntNuevacancion;
-        private System.Windows.Forms.Button btnNuevoInventario;
-        private System.Windows.Forms.Button btnResultados;
-        private System.Windows.Forms.Button bntCalendario;
         private System.Windows.Forms.Button btnSalida;
-        private System.Windows.Forms.ToolStripMenuItem tablasDeResultadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem datosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaPersonaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaCancionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoIngresoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tablaDeResultadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem canciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
     }
 }
 

@@ -35,7 +35,7 @@ namespace Proyecto_IBH_Alabanza
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Compartir_Datos.estado = cmbEstado.Text;
+            Compartir_Datos.estado = int.Parse(cmbEstado.SelectedIndex.ToString());
             if (rbtnSi.Checked)
             {
                 Compartir_Datos.bautizo = "Si";
@@ -44,7 +44,7 @@ namespace Proyecto_IBH_Alabanza
             {
                 Compartir_Datos.bautizo = "No";
             }
-            Compartir_Datos.disponibilidad = cmbDias.Text;
+            Compartir_Datos.disponibilidad = int.Parse(cmbDias.SelectedIndex.ToString());
             Compartir_Datos.observacion = txtObs.Text;
             this.Close();
         }

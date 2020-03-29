@@ -15,12 +15,11 @@ observacion nvarchar(80)
 
 
 CREATE TABLE dbo.Inventario
-(id_inventario int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+(serie int PRIMARY KEY NOT NULL,
 nombre_aparato nvarchar(30) NOT NULL,
 tipo_aparato int NOT NULL,
 marca nvarchar(30) NOT NULL,
 modelo nvarchar(30),
-serie nvarchar(30),
 color nvarchar(25),
 estado int NOT NULL,
 observacion nvarchar(80)
@@ -40,7 +39,7 @@ descripcion_genero nvarchar(10) NOT NULL
 )
 ----------------------
 CREATE TABLE dbo.Tipo_Talento
-(id_talento int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+(id_talento int PRIMARY KEY NOT NULL,
 descripcion_talento nvarchar(25) NOT NULL
 )
 
